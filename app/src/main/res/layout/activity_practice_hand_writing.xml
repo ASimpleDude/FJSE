@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyScreen.PracticeHandWritingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <com.example.japanesequizappversion2.DigitalInkRecognize.DrawView
+                android:id="@+id/draw_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </com.example.japanesequizappversion2.DigitalInkRecognize.DrawView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:id="@+id/text_recognize"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:background="#87CEFA"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25ssp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom"
+            android:background="#87CEFA"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/eraser_icon"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="false"
+                android:textColor="#6200ED"
+                android:textSize="@dimen/_18ssp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_recognize"
+
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+
+                android:background="@drawable/baseline_check_24"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

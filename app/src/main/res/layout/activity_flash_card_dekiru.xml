@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#BA0606"
+    android:foregroundTint="#BA0606"
+    android:orientation="vertical"
+    tools:context=".Dekiru.FlashCardDekiruActivity">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_header" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:height="@dimen/_100sdp"
+        android:autoSizeTextType="none"
+        android:text="@string/newword"
+        android:textColor="@color/white"
+        android:background="#FFBA0606"
+        android:textSize="34sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_grama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:height="@dimen/_100sdp"
+        android:text="@string/grammar"
+        android:textColor="@color/white"
+        android:background="#FFBA0606"
+        android:textSize="34sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_kenji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:height="@dimen/_100sdp"
+        android:text="@string/kanji"
+        android:textColor="@color/white"
+        android:background="#FFBA0606"
+        android:textSize="34sp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "267581035496",
+    "firebase_url": "https://japanesequizappversion2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "japanesequizappversion2",
+    "storage_bucket": "japanesequizappversion2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267581035496:android:4e9996a0dbc13715754a5d",
+        "android_client_info": {
+          "package_name": "com.example.japanesequizappversion2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267581035496-45a7ll034u9qkni8ei72cldvfr5t85uq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCESTJymuJgIuTTVavB1QlvzdWHNBZHLDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267581035496-45a7ll034u9qkni8ei72cldvfr5t85uq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

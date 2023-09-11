@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/questionTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/arrangesentence" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionTwo"
+        tools:text="Đây" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="@dimen/_12sdp"-->
+    <!--        android:layout_marginTop="@dimen/_24sdp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/_20sdp"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/text1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/questionTwo"-->
+    <!--        tools:text="là" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="@dimen/_12sdp"-->
+    <!--        android:layout_marginTop="@dimen/_24sdp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/_20sdp"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/text2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/questionTwo"-->
+    <!--        tools:text="bài" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="@dimen/_12sdp"-->
+    <!--        android:layout_marginTop="@dimen/_24sdp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/_20sdp"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/text3"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/questionTwo"-->
+    <!--        tools:text="text" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonQuestion2_3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:backgroundTint="#fe7c73"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonQuestion2_4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonQuestion2_4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:backgroundTint="#fe7c73"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonQuestion2_3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonQuestion2_1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:backgroundTint="#fe7c73"
+        app:layout_constraintBottom_toTopOf="@id/buttonQuestion2_3"
+        app:layout_constraintEnd_toStartOf="@id/buttonQuestion2_2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonQuestion2_2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:backgroundTint="#fe7c73"
+        app:layout_constraintBottom_toTopOf="@id/buttonQuestion2_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonQuestion2_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

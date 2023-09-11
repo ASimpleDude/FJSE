@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question.QuestionActivity">
+
+    <include
+        android:id="@+id/headerQuestion"
+        layout="@layout/layout_header" />
+
+    <ProgressBar
+        android:id="@+id/process"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:progressDrawable="@drawable/process_bar_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerQuestion" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3/10"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/process"
+        app:layout_constraintEnd_toEndOf="@id/process"
+        app:layout_constraintStart_toStartOf="@id/process"
+        app:layout_constraintTop_toTopOf="@id/process" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@id/btnNextQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/process" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:text="Next"
+        app:backgroundTint="#0FADF4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rcQuestion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

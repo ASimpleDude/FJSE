@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_dekiru"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        tools:text="わたし"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/imvarr1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvContentF"/>
+
+    <TextView
+        android:textStyle="bold"
+        tools:text="私"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContentF"
+        android:id="@+id/tvContentS"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imv1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/round_star_border_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContentS"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="Nghĩa"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv1"
+        android:id="@+id/tv1"/>
+
+    <TextView
+        tools:text="Tôi"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:id="@+id/tvMean"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/baseline_edit_note_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMean"
+        android:id="@+id/imvEx"/>
+
+    <TextView
+        android:text="Ví dụ"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvEx"
+        android:id="@+id/tvEx"/>
+
+    <TextView
+        tools:text="私はベトナムじじんです私はベトナムじじんです私はベトナムじじんです"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="45dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEx"
+        android:id="@+id/tvSentenceJP"/>
+
+    <TextView
+        android:text="tôi là người Việt Nam"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginHorizontal="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSentenceJP"
+        android:id="@+id/tvSentenceVI"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/round_star_border_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSentenceVI"
+        android:id="@+id/imvNote"/>
+
+    <TextView
+        android:text="Chú thích"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvNote"
+        android:id="@+id/tv"/>
+
+
+    <TextView
+        tools:text="không phân biệt giới tính"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        android:id="@+id/tvNote"/>
+
+
+
+    <ImageView
+        android:id="@+id/imvarr1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/round_navigate_next_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:rotation="-90"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/round_navigate_next_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:rotation="90"/>
+
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/round_navigate_next_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:rotation="0"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/round_navigate_next_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:rotation="180"/>
+
+    <ImageView
+        android:id="@+id/tutorial"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/round_lightbulb_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/bg_tutorial"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toTopOf="@id/tutorial"
+        app:layout_constraintStart_toEndOf="@+id/tutorial"
+        android:id="@+id/tutorial_area">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Vuốt sang phải nếu bạn đã nhớ"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Vuốt sang trái nếu bạn chưa nhớ"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Vuốt lên xuống để xem các thẻ"/>
+
+        <CheckBox
+            android:id="@+id/chk_not_redisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không hiển thị lại"
+            android:layout_gravity="start"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
